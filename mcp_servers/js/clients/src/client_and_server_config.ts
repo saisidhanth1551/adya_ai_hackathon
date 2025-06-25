@@ -21,6 +21,11 @@ export const ServersConfig:any = [
         server_features_and_capability:`TODOIST`,
         path : "build/index.js"
     },
+    {
+        server_name :"MCP-TFE",
+        server_features_and_capability:`MCP-TFE`,
+        path : "build/index.js"
+    },
     // {
     //     server_name :"WORDPRESS",
     //     server_features_and_capability:`WORDPRESS`,
