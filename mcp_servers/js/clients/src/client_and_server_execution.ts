@@ -912,6 +912,11 @@ async function CallAndExecuteTool(selected_server:any, server_credentials:any,to
                 "appSecret": server_credentials[selected_server]?.appSecret || "",
             }
             break;
+        case "SENDGRID":
+            args["__credentials__"] = {
+                "api_key": server_credentials[selected_server]?.api_key || ""
+            } 
+            break;
         case "WOOCOMMERCE":
             args["__credentials__"] = {
                 "url": server_credentials[selected_server]?.url || "",
