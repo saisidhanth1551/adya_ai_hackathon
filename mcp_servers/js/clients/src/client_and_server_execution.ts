@@ -928,6 +928,16 @@ async function CallAndExecuteTool(selected_server:any, server_credentials:any,to
         default:
             break;
     }
+        case "GCLS_MCP":
+            args["__credentials__"] = {
+            clientId: server_credentials[selected_server]?.clientId || "",
+            clientSecret: server_credentials[selected_server]?.clientSecret || "",
+            refreshToken: server_credentials[selected_server]?.refreshToken || "",
+            redirectUri: server_credentials[selected_server]?.redirectUri || "",
+            // Optional: Access token, if already retrieved
+            //accessToken: server_credentials[selected_server]?.accessToken || ""
+    };
+    break;
 
     try {
         tool_call_result = await MCPServers[selected_server].callTool({
