@@ -789,6 +789,13 @@ async function CallAndExecuteTool(selected_server:any, server_credentials:any,to
     var tool_call_result:any
 
     switch (selected_server) {
+        case "MCP-TFE":
+            const tfeCredentials = server_credentials[selected_server] || {};
+            args["__credentials__"] = {
+                service_account_key: tfeCredentials.service_account_key || {},
+                project_id: tfeCredentials.project_id || ""
+            };
+            break;
         case "CONFLUENCE":
             const confluenceCreds = server_credentials[selected_server]?.credentials || server_credentials[selected_server] || {};
             args["__credentials__"] = {
