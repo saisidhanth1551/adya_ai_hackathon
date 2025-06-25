@@ -14,12 +14,12 @@ export const ServersConfig:any = [
     {
         server_name :"WOOCOMMERCE",
         server_features_and_capability:`WOOCOMMERCE`,
-        path : "dist/index.js"
+        path : "build/index.js"
     },
     {
         server_name :"TODOIST",
         server_features_and_capability:`TODOIST`,
-        path : "dist/index.js"
+        path : "build/index.js"
     },
     // {
     //     server_name :"WORDPRESS",
