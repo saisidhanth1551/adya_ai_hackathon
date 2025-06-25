@@ -26,6 +26,11 @@ export const ServersConfig:any = [
         server_features_and_capability:`MCP-TFE`,
         path : "build/index.js"
     },
+    {
+        server_name: "GCLS_MCP",
+        server_features_and_capability: "GOOGLE CLASSROOM",
+        path: "index.js"
+    }
     // {
     //     server_name :"WORDPRESS",
     //     server_features_and_capability:`WORDPRESS`,
