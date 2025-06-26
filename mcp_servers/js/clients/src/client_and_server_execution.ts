@@ -232,6 +232,7 @@ export async function ClientAndServerExecution(payload:any, streaming_callback:a
                         if (matchingTool) {
                             final_tool_calls.push(matchingTool);
                         }
+                        
                     }
                     client_details.prompt = temp_prompt;
                     client_details.tools = final_tool_calls;
