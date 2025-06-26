@@ -22,8 +22,8 @@ app.use(session({
 }));
 
 // OAuth2 Configuration
-const CLIENT_ID = process.env.CLIENT_ID || '559579582866-rggn886e3itl35vipbtm58hmmqrlpe9f.apps.googleusercontent.com';
-const CLIENT_SECRET = process.env.CLIENT_SECRET || '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';
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const REDIRECT_URI = 'http://localhost:5000/oauth2callback';
 const SCOPES = [
   'https://www.googleapis.com/auth/classroom.courses',
