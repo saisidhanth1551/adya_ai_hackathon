@@ -15,7 +15,7 @@ import { SendGridService } from "./services/sendgrid.js";
 import { getToolDefinitions, handleToolCall } from "./tools/index.js";
 
 // Initialize SendGrid with API key from environment variable
-const SENDGRID_API_KEY = "API_KEY";
+const SENDGRID_API_KEY = process.env."SENDGRID_API_KEY";
 if (!SENDGRID_API_KEY) {
   throw new Error('SENDGRID_API_KEY environment variable is required');
 }
